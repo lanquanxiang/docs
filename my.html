@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<title>网站聚合</title>
+
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="icon" href="logo.ico">
+
+		<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+		<script src="js/bootstrap.min.js"></script>
+		<style>
+			.company {
+				height: 40px;
+				background-color: gray;
+				text-align: center;
+				line-height: 40px;
+				font-size: 14px;
+			}
+
+			.thumbnail {
+				height: 300px;
+			}
+
+			.hide {
+				display: hidden;
+			}
+		</style>
+		<script type="text/javascript">
+			function show(type) {
+				$(".col-md-3").addClass("hide");
+				if (type == "all") {
+					$(".col-md-3").removeClass("hide");
+				} else {
+					var type = "." + type;
+					$(type).removeClass("hide");
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<header>
+
+			<!--导航栏-->
+			<div class="row">
+				<nav class="navbar navbar-default">
+					<div class="container">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+								data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="http://www.pzhuweb.cn">PZHUWEB</a>
+						</div>
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="#" onclick="show('all')">All <span
+											class="sr-only">(current)</span></a></li>
+								<li><a href="#" onclick="show('tool')">工具</a></li>
+								<li><a href="#" onclick="show('study')">学习</a></li>
+								<li><a href="#" onclick="show('play')">娱乐</a></li>
+
+							</ul>
+							<!-- 
+                 <form class="navbar-form navbar-left" role="search">
+                   <div class="form-group">
+                     <input type="text" class="form-control" placeholder="Search">
+                   </div>
+                   <button type="submit" class="btn btn-default">Submit</button>
+                 </form> -->
+
+						</div><!-- /.navbar-collapse -->
+					</div><!-- /.container-fluid -->
+				</nav>
+
+			</div>
+
+
+		</header>
+		<!-- 2.主体部分-->
+		<div class="container">
+			<div class="row paddtop">
+				<div class="col-md-3 tool">
+					<div class="thumbnail">
+						<a href="https://vocalremover.org/zh/" target="_blank"><img src="img/01.jpg" alt=""></a>
+						<p>这个免费的在线应用程序将通过创建卡拉OK来帮助去除歌曲中的人声。</p>
+						<a href="https://vocalremover.org/zh/" target="_blank">
+							<font color="red">人声分离网站</font>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 study tool">
+					<div class="thumbnail">
+						<a href="https://boardmix.cn" target="_blank"><img src="img/02.jpg" alt=""></a>
+						<p>BoardMix在线协作白板，集自由布局、画笔、便签、多媒体呈现、脑图、文档多种创意表达能力于一体，激发团队创造力无限延伸。</p>
+						<a href="https://boardmix.cn" target="_blank">
+							<font color="red">BoardMix博思白板</font>
+						</a>
+					</div>
+
+				</div>
+				<div class="col-md-3 tool">
+
+					<div class="thumbnail">
+						<a href="https://www.gaituya.com" target="_blank"><img src="img/03.jpg" alt=""></a>
+						<p>改图鸭,您身边的图片处理专家，能在线即可处理图片，无需下载、安装任何程序，在线即可对图片进行多种编辑处理</p>
+
+						<a href="https://www.gaituya.com" target="_blank">
+							<font color="red">图片编辑网站</font>
+						</a>
+					</div>
+
+				</div>
+
+				<div class="col-md-3 tool play">
+
+					<div class="thumbnail">
+						<a href="https://www.hippopx.com/zh" target="_blank"><img src="img/04.jpg" alt=""></a>
+						<p>基于CC0协议的免版权图库</p>
+
+						<a href="https://www.hippopx.com/zh" target="_blank">
+							<font color="red">免板权图片网站</font>
+						</a>
+					</div>
+		 	</div>
+
+				<div class="col-md-3 play">
+
+					<div class="thumbnail">
+						<a href="https://www.mvcat.com/" target="_blank"><img src="img/05.jpg" alt=""></a>
+						<p>一个电影推荐网站，思维导图式的分类</p>
+						<a href="https://www.mvcat.com/" target="_blank">
+							<font color="red">电影推荐聚合网站</font>
+						</a>
+					</div>
+				</div>
+
+
+				<div class="col-md-3 study tool">
+					<div class="thumbnail">
+						<a href="https://zh.wikihow.com/" target="_blank"><img src="img/06.jpg" alt=""></a>
+						<p>wikiHow汇聚各个领域值得信赖的研究与专业知识。</p>
+						<a href="https://zh.wikihow.com/" target="_blank">
+							<font color="red">不那么正经的百科网站</font>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-md-3 study tool">
+					<div class="thumbnail">
+						<a href="https://www.iconfont.cn/" target="_blank"><img src="img/07.jpg" alt=""></a>
+						<p>阿里妈妈MUX倾力打造的矢量图标管理、交流平台，便于前端工程师自由调整与调用。</p>
+						<a href="https://www.iconfont.cn/" target="_blank">
+							<font color="red">阿里矢量图标</font>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-md-3 study tool">
+					<div class="thumbnail">
+						<a href="https://www.runoob.com/" target="_blank"><img src="img/08.jpg" alt=""></a>
+						<p>致力于推广各种编程语言技术，奔跑吧！菜鸟。学的不仅是技术，更是梦想！</p>
+						<a href="https://www.runoob.com/" target="_blank">
+							<font color="red">菜鸟教程</font>
+						</a>
+					</div>
+				</div>
+
+
+
+			</div>
+
+
+		</div>
+		<!-- 3.页脚部分-->
+		<footer class="container-fluid">
+			<div class="row company">
+				&copy;2016-<span id="now"></span> Web应用专业团队蜀ICP备17013737号-1---川公网安备51040202000276号
+			</div>
+
+		</footer>
+		<script>
+			document.getElementById("now").innerHTML = new Date().getFullYear();
+		</script>
+
+	</body>
+</html>
